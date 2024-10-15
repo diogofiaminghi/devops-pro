@@ -1,0 +1,11 @@
+services:
+  postgre:
+    image: postgres:12.17
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=kubenews
+      - POSTGRES_DB=kubenews
+    volumes:
+      - /home/diogofiaminghi/devops-pro/01-docker/12-docker-compose/postgre_vol:/var/lib/postgresql/data

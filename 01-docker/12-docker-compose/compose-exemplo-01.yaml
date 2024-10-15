@@ -1,0 +1,11 @@
+# version: "3.8" - na versão 2 não é obrigatório
+
+#cada container eh um service
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    
